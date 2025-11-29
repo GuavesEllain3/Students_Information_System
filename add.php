@@ -5,6 +5,7 @@ if (isset($_POST['save'])) {
     $course = $_POST['course'];
     $year = $_POST['year'];
     $email= $_POST['email'];
+    $age= $_POST['age'];
     $address = $_POST['address'];
 
     mysqli_query($conn, "INSERT INTO students(fullname, email, age, address, course, year_level) VALUES ('$fullname','$email','$age','$address','$course','$year')");
@@ -52,4 +53,5 @@ if (isset($_POST['save'])) {
     </form>
 </div>
 </body>
+
 </html>
